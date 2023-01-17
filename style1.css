@@ -1,0 +1,131 @@
+body{
+    display: grid;
+    justify-items: center;
+}
+
+.container{
+    margin: 3rem 4rem;
+    padding: 5rem 0;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 4px;
+    width: 1000px;
+    height: 800px;
+    position: relative;
+}
+
+.firstT{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 350px solid #9ba4aa;
+    border-right: 350px solid transparent;
+    bottom: 63.5%;
+    animation: mymove 2s 2;
+}
+
+.secondT{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 540px solid transparent;
+    border-right: 540px solid #242020;
+    border-bottom: 540px solid transparent;
+    bottom: -5%;
+    right: 60%;
+}
+
+.thirdT{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 180px solid transparent;
+    border-left: 180px solid #c29e3b;
+    border-bottom: 180px solid transparent;
+    top:62.5%;
+}
+
+.fourthT{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 180px solid transparent;
+    border-bottom: 180px solid #d6d0c4;
+    border-right: 180px solid transparent;
+    top: 81.3%;
+}
+
+.fifthT{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 385px solid transparent;
+    border-left: 385px solid #d0c9c1;
+    border-bottom: 385px solid transparent;
+    left: 36%;
+    bottom: 38%;
+}
+
+.sixthT{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 360px solid #a9acb1;
+    border-right: 360px solid transparent;
+    top: 62.5%;
+    left: 36%;
+}
+
+.seventhT{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 220px solid transparent;
+    border-right: 220px solid transparent;
+    border-top: 220px solid #6d6667;
+    top: 0%;
+    left: 52%;
+}
+
+.eighthT{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 645px solid transparent;
+    border-right: 645px solid #a51c0e;
+    border-bottom: 645px solid transparent;
+    left: 35.8%;
+    bottom: -29.5%;
+}
+
+.top{
+    position: absolute;
+    width: 2000px;
+    height: 500px;
+    background: white;
+    top: -50%;
+    right: -2%;
+}
+.bottom{
+    position: absolute;
+    width: 2000px;
+    height: 500px;
+    background: white;
+    bottom: -52%;
+}
+
+.left{
+    position: absolute;
+    width: 500px;
+    height: 2000px;
+    background: white;
+    left: -50%;
+    top: -2%;
+}
+
+
+@keyframes mymove {
+    from {left: 200px;}
+    to {left: 0px;}
+}
+

@@ -21,7 +21,7 @@ body{
     border-top: 350px solid #9ba4aa;
     border-right: 350px solid transparent;
     bottom: 63.5%;
-    animation: mymove 2s 2;
+    animation: move 5s infinite;
 }
 
 .secondT{
@@ -33,6 +33,7 @@ body{
     border-bottom: 540px solid transparent;
     bottom: -5%;
     right: 60%;
+    animation: move2 5s infinite;
 }
 
 .thirdT{
@@ -43,6 +44,7 @@ body{
     border-left: 180px solid #c29e3b;
     border-bottom: 180px solid transparent;
     top:62.5%;
+    animation: move3 5s infinite;
 }
 
 .fourthT{
@@ -53,6 +55,7 @@ body{
     border-bottom: 180px solid #d6d0c4;
     border-right: 180px solid transparent;
     top: 81.3%;
+    animation: move4 5s infinite;
 }
 
 .fifthT{
@@ -64,6 +67,7 @@ body{
     border-bottom: 385px solid transparent;
     left: 36%;
     bottom: 38%;
+    animation: move5 5s infinite, wiggle 5s infinite;
 }
 
 .sixthT{
@@ -74,6 +78,7 @@ body{
     border-right: 360px solid transparent;
     top: 62.5%;
     left: 36%;
+    animation: move6 5s infinite;
 }
 
 .seventhT{
@@ -85,6 +90,7 @@ body{
     border-top: 220px solid #6d6667;
     top: 0%;
     left: 52%;
+    animation: move7 5s infinite, float 6s ease-in-out infinite;
 }
 
 .eighthT{
@@ -96,6 +102,7 @@ body{
     border-bottom: 645px solid transparent;
     left: 35.8%;
     bottom: -29.5%;
+    animation: move8 5s infinite;
 }
 
 .top{
@@ -124,8 +131,87 @@ body{
 }
 
 
-@keyframes mymove {
-    from {left: 200px;}
+@keyframes move {
+    from {left: -1000px;}
     to {left: 0px;}
 }
 
+@keyframes move2 {
+    from {left: 200px;}
+    to {left: -180px;}
+}
+
+@keyframes move3 {
+    from {left: -1000px;
+       transform: rotate(45deg);
+    }
+    to {left: 0px;}
+}
+
+@keyframes move4 {
+    from {
+       transform: rotate(180deg);
+    }
+    to {left: 0px;}
+}
+@keyframes move5 {
+    from {left: 2000px;
+    }
+    to {left: 358px;}
+}
+@keyframes move6 {
+    from {top: 0px;
+        left: 0px;
+        transform: rotate(90deg);
+    }
+    to {left: 358px;}
+}
+
+@keyframes move7 {
+    from {left: 2000px;
+    }
+    to {left: 520px;}
+}
+
+@keyframes move8 {
+    from {left: 2000px;
+        transform: rotate(180deg);
+    }
+    to {left: 355px;}
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }

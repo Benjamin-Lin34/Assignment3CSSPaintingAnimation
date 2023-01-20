@@ -21,7 +21,7 @@ body{
     border-top: 350px solid #9ba4aa;
     border-right: 350px solid transparent;
     bottom: 63.5%;
-    animation: move 5s infinite;
+    animation: move 5s 2;
 }
 
 .secondT{
@@ -33,7 +33,7 @@ body{
     border-bottom: 540px solid transparent;
     bottom: -5%;
     right: 60%;
-    animation: move2 5s infinite;
+    animation: move2 5s 2;
 }
 
 .thirdT{
@@ -44,7 +44,7 @@ body{
     border-left: 180px solid #c29e3b;
     border-bottom: 180px solid transparent;
     top:62.5%;
-    animation: move3 5s infinite;
+    animation: move3 5s 2;
 }
 
 .fourthT{
@@ -55,7 +55,7 @@ body{
     border-bottom: 180px solid #d6d0c4;
     border-right: 180px solid transparent;
     top: 81.3%;
-    animation: move4 5s infinite;
+    animation: move4 5s 2;
 }
 
 .fifthT{
@@ -67,7 +67,7 @@ body{
     border-bottom: 385px solid transparent;
     left: 36%;
     bottom: 38%;
-    animation: move5 5s infinite, wiggle 5s infinite;
+    animation: move5 5s 2, wiggle 5s infinite;
 }
 
 .sixthT{
@@ -78,7 +78,7 @@ body{
     border-right: 360px solid transparent;
     top: 62.5%;
     left: 36%;
-    animation: move6 5s infinite;
+    animation: move6 5s 2;
 }
 
 .seventhT{
@@ -90,7 +90,7 @@ body{
     border-top: 220px solid #6d6667;
     top: 0%;
     left: 52%;
-    animation: move7 5s infinite, float 6s ease-in-out infinite;
+    animation: move7 5s 2, float 4s ease-in-out infinite;
 }
 
 .eighthT{
@@ -102,7 +102,7 @@ body{
     border-bottom: 645px solid transparent;
     left: 35.8%;
     bottom: -29.5%;
-    animation: move8 5s infinite;
+    animation: move8 5s 2, float 6s ease-in-out infinite;
 }
 
 .top{
@@ -129,7 +129,6 @@ body{
     left: -50%;
     top: -2%;
 }
-
 
 @keyframes move {
     from {left: -1000px;}
